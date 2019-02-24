@@ -5,7 +5,7 @@
 
 #### Objectives
 - Understanding of Java, Spring Boot, Relational Database and RESTful API
-- Implimenting basic four [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations
+- Implementing basic four [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations
 - JUnit test with MockMVC
 
 Target audiences:
