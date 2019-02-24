@@ -1,0 +1,6 @@
+me/practice/DatabaseLoader.class
+me/practice/repository/ProductRepository.class
+me/practice/entity/Product.class
+me/practice/entity/Company.class
+me/practice/DemoCompanyProductApplication.class
+me/practice/repository/CompanyRepository.class
