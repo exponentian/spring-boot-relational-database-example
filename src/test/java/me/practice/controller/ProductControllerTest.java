@@ -56,7 +56,7 @@ public class ProductControllerTest {
         int id = 100;
         this.mockMvc.perform( get(this.API + "/" + id) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Product with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Product with id " + id)) )
                 .andReturn();
     }
     
@@ -99,7 +99,7 @@ public class ProductControllerTest {
         int id = 100;
         this.mockMvc.perform( get("/api/companies/" + id + "/products") )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Company with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Company with id " + id)) )
                 .andReturn();
     }
     
@@ -123,7 +123,7 @@ public class ProductControllerTest {
                         .contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
                         .content(asJsonString( this.newProduct() )) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Company with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Company with id " + id)) )
                 .andReturn();
     }
     
@@ -152,7 +152,7 @@ public class ProductControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
                 .content( asJsonString( new Product("test", "test", "test") )) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Product with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Product with id " + id)) )
                 .andReturn();
     }
     
@@ -170,7 +170,7 @@ public class ProductControllerTest {
         int id = 100;
         this.mockMvc.perform( delete(this.API + "/" + id) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Product with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Product with id " + id)) )
                 .andReturn();
     }
     

@@ -4,9 +4,9 @@
 #### Author: Ho Seok (Brandon) Oh
 
 #### Objectives
-- Understanding of Java, Spring Boot, Relational Database and RESTful API
+- Understanding of Java (Class, Interface), Spring Boot, Relational Database and RESTful API
 - Implementing basic four [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations
-- JUnit test with MockMVC
+- JUnit test with MockMVC for controllers
 
 Target audiences:
 - Beginners of web development
@@ -15,7 +15,7 @@ Target audiences:
 
 Used Tools:
 - Java 8
-- Netbeans 8.2
+- Netbeans 8.2 with SpringBoot plugin
 - Spring Boot 2.1.3
 - PostgreSQL
 

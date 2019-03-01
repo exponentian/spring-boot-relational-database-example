@@ -58,7 +58,7 @@ public class CompanyControllerTest {
         int id = 100;
         this.mockMvc.perform( get(this.API + "/" + id) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Company with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Company with id " + id)) )
                 .andReturn();
     }
     
@@ -117,7 +117,7 @@ public class CompanyControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
                 .content( asJsonString( new Company("test", "test", "test") )) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Company with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Company with id " + id)) )
                 .andReturn();
     }
     
@@ -135,7 +135,7 @@ public class CompanyControllerTest {
         int id = 100;
         this.mockMvc.perform( delete(this.API + "/" + id) )
                 .andExpect( status().isNotFound() )
-                .andExpect( jsonPath("$", is("Count not found Company with id " + id)) )
+                .andExpect( jsonPath("$", is("Could not found Company with id " + id)) )
                 .andReturn();
     }
     

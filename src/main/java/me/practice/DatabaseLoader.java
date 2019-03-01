@@ -22,13 +22,8 @@ public class DatabaseLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
-        createData();
-        System.out.println("\ndata created...");
-    }
-    
     @Transactional
-    public void createData() {
+    public void run(String... args) throws Exception {
         Company apple = new Company("Apple", "San Francisco, USA", "123-456-7890");
         Company samsung = new Company("Samsung", "Seoul, South Korea", "123-456-1111");
         Company sony = new Company("Sony", "Tokyo, Japan", "123-456-0987");
@@ -48,6 +43,8 @@ public class DatabaseLoader implements CommandLineRunner {
         this.productRepository.save(mac);
         this.productRepository.save(galaxyNote);
         this.productRepository.save(galaxyS);
+        
+        System.out.println("\nData is created successfully...\n");
     }
     
 }

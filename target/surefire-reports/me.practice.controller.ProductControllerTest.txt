@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: me.practice.controller.ProductControllerTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.645 s - in me.practice.controller.ProductControllerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.913 s - in me.practice.controller.ProductControllerTest

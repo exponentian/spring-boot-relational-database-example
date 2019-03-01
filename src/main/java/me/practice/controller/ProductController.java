@@ -47,11 +47,10 @@ public class ProductController {
     
     @GetMapping("/companies/{companyId}/products")
     public List<Product> getAllProductsByCompany(@PathVariable Integer companyId) {
-        if ( this.companyRepository.existsById(companyId) ) {
-            return this.productRepository.findProductsByCompanyId(companyId);
-        } {
-            throw new DataNotFoundException("Company", companyId);
+        if ( !this.companyRepository.existsById(companyId) ) {
+            throw new DataNotFoundException("Company", companyId);   
         }
+        return this.productRepository.findProductsByCompanyId(companyId);
     }
     
     // Post
